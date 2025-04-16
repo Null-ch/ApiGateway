@@ -1,6 +1,6 @@
 # ApiGateway
 
-API Gateway для мобильного приложения или иных целей, обеспечивающий единую точку входа для взаимодействия с различными сервисами.
+Node API Gateway для мобильного приложения или иных целей, обеспечивающий единую точку входа для взаимодействия с различными сервисами.
 
 ## Описание
 
@@ -29,7 +29,7 @@ Core Mobile Gateway - это прокси-сервер, который:
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/Null-ch/ApiGateway.git
+git clone https://github.com/Null-ch/Node-Api-Gateway.git
 cd ApiGateway
 ```
 
@@ -77,8 +77,7 @@ npm start
 
 ### Docker
 ```bash
-docker build -t core-mobile-gateway .
-docker run -p 3000:3000 --env-file .env core-mobile-gateway
+docker-compose up --build -d
 ```
 
 ## API Принцип работы
