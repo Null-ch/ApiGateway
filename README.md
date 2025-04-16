@@ -29,7 +29,7 @@ Core Mobile Gateway - это прокси-сервер, который:
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/Null-ch/ApiGateway.git
+git clone https://github.com/Null-ch/Node-Api-Gateway.git
 cd ApiGateway
 ```
 
