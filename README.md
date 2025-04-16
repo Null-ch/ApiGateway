@@ -77,8 +77,7 @@ npm start
 
 ### Docker
 ```bash
-docker build -t core-mobile-gateway .
-docker run -p 3000:3000 --env-file .env core-mobile-gateway
+docker-compose up --build -d
 ```
 
 ## API Принцип работы
