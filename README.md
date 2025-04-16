@@ -1,6 +1,6 @@
 # ApiGateway
 
-API Gateway для мобильного приложения, обеспечивающий единую точку входа для взаимодействия с различными сервисами.
+API Gateway для мобильного приложения или иных целей, обеспечивающий единую точку входа для взаимодействия с различными сервисами.
 
 ## Описание
 
@@ -29,8 +29,8 @@ Core Mobile Gateway - это прокси-сервер, который:
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/your-username/core-mobile-gateway.git
-cd core-mobile-gateway
+git clone https://github.com/Null-ch/ApiGateway.git
+cd ApiGateway
 ```
 
 2. Установите зависимости:
