@@ -1,0 +1,33 @@
+# Зависимости
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Файлы окружения
+.env
+.env.local
+.env.*.local
+
+# Логи
+logs
+*.log
+
+# IDE и редакторы
+.idea
+.vscode
+*.swp
+*.swo
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Документация
+README.md
+LICENSE 
