@@ -14,10 +14,9 @@ class ProxyService {
       const targetUrl = req.url.replace(`/api/v1/${this.serviceName}`, '');
       const fullUrl = UrlUtils.buildFullUrl(this.serviceConfig.url, targetUrl);
 
-      // Формируем заголовки запроса
       const headers = {
         ...req.headers,
-        ...this.serviceConfig.headers, // Специфичные заголовки для конкретного сервиса
+        ...this.serviceConfig.headers,
         'host': new URL(this.serviceConfig.url).host
       };
 
