@@ -45,15 +45,17 @@ cp .env.example .env
 
 4. Настройте переменные окружения в файле `.env`:
 ```env
-# Сервис User Login Manager
+# Сервис 1
 USER_SERVICE_URL=https://your-user-service.com
 USER_SERVICE_TIMEOUT=5000
+# Заголовки которые можно добавить к проксированному запросу
 CLIENT_ID=your_client_id
 CLIENT_SECRET=your_client_secret
 
-# Сервис Конвейер
+# Сервис 2
 SERVICE_URL=https://your-service.com
 SERVICE_TIMEOUT=5000
+# Заголовки которые можно добавить к проксированному запросу
 APP_ID=your_app_id
 
 # Настройки логирования
@@ -79,16 +81,10 @@ docker build -t core-mobile-gateway .
 docker run -p 3000:3000 --env-file .env core-mobile-gateway
 ```
 
-## API Endpoints
-
-### User Login Manager
-- `POST /api/v1/user/login` - аутентификация пользователя
-- `GET /api/v1/user/profile` - получение профиля пользователя
-- `PUT /api/v1/user/profile` - обновление профиля пользователя
-
-### Конвейер
-- `GET /api/v1/service/status` - получение статуса сервиса
-- `POST /api/v1/service/process` - обработка запроса
+## API Принцип работы
+При запросе к сервису по адресу он перенаправляет запрос на указанный вами сервис
+На данный момент в проекте 2 сервиса, User (/api/v1/user) и Service (/api/v1/service) соответственно
+Эндпоинты можно изменить в proxy-service.js 
 
 ## Логирование
 
